@@ -1,38 +1,50 @@
-*{
+* {
     box-sizing: border-box;
 }
 
-html{
+html {
     scroll-behavior: smooth;
 }
 
-body{
+body {
     font-family: Helvetica, sans-serif;
     margin: 0;
 }
 
-h1{ font-size: 3em;}
-h2{ font-size: 2.7em;}
-h3{ font-size: 2em;}
-p{ font-size: 1.25em;}
-ul{ list-style: none;}
-li{ font-size: 1.25em;}
+h1 {
+    font-size: 3em;
+}
+
+h2 {
+    font-size: 2.7em;
+}
+
+h3 {
+    font-size: 2em;
+}
+
+p {
+    font-size: 1.25em;
+}
 
 
 
-.container{
-    max-width: 1400px;
+
+.container {
+    max-width: 1300px;
     margin: auto;
 }
 
-.color-acento{ color: teal; }
-
-header{
-    background-color: rgb(245,245,245);
-    
+.color-acento {
+    color: teal;
 }
 
-header .logo{
+header {
+    background-color: rgb(245, 245, 245);
+
+}
+
+header .logo {
     margin: 0;
     padding: 25px 30px;
     font-weight: bold;
@@ -40,79 +52,96 @@ header .logo{
     font-size: 1.6em;
 }
 
-header .container{
+header .container {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-header nav{
+header nav {
     display: flex;
     flex-direction: column;
     text-align: center;
     padding-bottom: 25px;
 }
 
-header a{
-    padding: 5px 12px;
+nav {
+    display: flex;
+    gap: 0.8rem;
+}
+
+header a {
+    padding: 4px 10px;
     text-decoration: none;
     font-weight: bold;
-    color: black;
+
 }
 
-header a:hover{
-    color: blueviolet;
+a {
+    flex: 1px;
+    background-color: #2a2828;
+    color: #1f898d;
+    border: 1px solid;
+    padding: 0.8rem;
+    text-align: center;
+    text-decoration: none;
+    transition: all 0.5s ease-out;
 }
 
-#hero{
+a:hover,
+a:focus {
+    background-color: rgb(199, 197, 197);
+    color: #151414;
+}
+
+#hero {
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
     flex-direction: column;
     height: 80vh;
-    background-image: linear-gradient(
-        0deg,
-        rgba(0,0,0,0.5),
-        rgba(0,0,0,0.5)
-    )
-    ,url("images/ropa-principal.jpg");
+    background-image: linear-gradient(0deg,
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)), url("images/ropa-principal.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
 }
 
-#hero h1{
+#hero h1 {
+
+
     color: whitesmoke;
 }
 
 
 
-#hestia-store .container{
+#hestia-store .container {
     text-align: center;
     padding: 200px 12px;
 }
 
-#nuestros-productos{
-    background-color: rgb(30,30,30);
+#nuestros-productos {
+    background-color: rgb(30, 30, 30);
     color: whitesmoke;
     text-align: center;
 }
 
-#nuestros-productos .container{
+#nuestros-productos .container {
     padding: 140px 12px;
 }
 
-#nuestros-productos h2{
+#nuestros-productos h2 {
     margin-top: 0;
     font-size: 3em;
 }
 
-#nuestros-productos p{
+#nuestros-productos p {
     display: none;
 }
 
-#nuestros-productos .carta{
+#nuestros-productos .carta {
     background-position: center center;
     background-size: cover;
     padding: 50px 0px;
@@ -120,254 +149,368 @@ header a:hover{
     border-radius: 15px;
 }
 
-.carta:first-child{
-    background-image: linear-gradient(
-        0deg,
-        rgba(0,0,0,0.5),
-        rgba(0,0,0,0.5)
-    )
-    ,url("images/ropa-1ninos.jpg");
+.carta:first-child {
+    background-image: linear-gradient(0deg,
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)), url("images/ropa-1ninos.jpg");
+
 
 }
 
-.carta:nth-child(2){
-    background-image: linear-gradient(
-        0deg,
-        rgba(0,0,0,0.5),
-        rgba(0,0,0,0.5)
-    )
-    ,url("images/mujer.jpg");
+.carta:nth-child(2) {
+    background-image: linear-gradient(0deg,
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)), url("images/mujer.jpg");
 }
 
-.carta:nth-child(3){
-    background-image: linear-gradient(
-        0deg,
-        rgba(0,0,0,0.5),
-        rgba(0,0,0,0.5)
-    )
-    ,url("images/accesorios-hombre.jpg");
+.carta:nth-child(3) {
+    background-image: linear-gradient(0deg,
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)), url("images/accesorios-hombre.jpg");
 
 }
 
-.carta:nth-child(4){
-    background-image: linear-gradient(
-        0deg,
-        rgba(0,0,0,0.5),
-        rgba(0,0,0,0.5)
-    )
-    ,url("images/accesrios-varios.jpg");
+.carta:nth-child(4) {
+    background-image: linear-gradient(0deg,
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)), url("images/accesrios-varios.jpg");
 
 }
 
 
 
-#final{
+#final {
     display: flex;
     flex-direction: column;
-    background-color: rgb(30,30,30);
-    color: white;
+    background-color: rgb(30, 30, 30);
+    color: rgb(234, 223, 223);
     height: 80vh;
 }
 
-#final h2{
+#final h2 {
     font-size: 9vw;
+    text-align: center;
 }
 
 .formulario {
-    width: 500px;
-    max-width: 100%;
-    margin: auto;
-    margin-top: 20px;
-    padding: 15px;
-    box-shadow: 0 0 20px 1px rgba(0,0,0,0.3);
+
+    display: block;
+    text-align: center;
+
+}
+
+.formulario__label {
+    display: block;
+    font-weight: 800;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.formulario__grupo-input {
     position: relative;
 }
 
-.formulario-titulo {
-    text-align: center;
-    margin-top: 30px;
-    color: white;
+.formulario__input {
+    width: 35%;
+    background: #fff;
+    border: 3px solid transparent;
+    border-radius: 3px;
+    height: 40px;
+    line-height: 40px;
+    padding: 0 40px 0 10px;
+    transition: .3s ease all;
 }
 
-.formulario-input, .formulario-label, .formulario-submit {
+.formulario__input:focus {
+    border: 3px solid #0075FF;
+    outline: none;
+    box-shadow: 3px 0px 30px rgba(163, 163, 163, 0.4);
+}
+
+.formulario__input-error {
+    font-size: 15px;
+    margin-bottom: 0;
+    display: none;
+}
+
+.formulario__input-error-activo {
     display: block;
-    width: 100%;
-    font-size: 1.2em;
-    
-    
 }
 
-.formulario-input {
-    padding: 0.9px;
-    border: 1px solid rgba(0,0,0,0.3);
-    margin-bottom: 40px;
-}
-
-.formulario-input:focus {
-    outline: 1px solid rgba(85, 194, 190, 0.7);
-    
-}
-
-
-
-.formulario-label {
-    padding-left: 15px;
+.formulario__validacion-estado {
     position: absolute;
-    margin-top: -85px;
-    
-
+    right: 10px;
+    bottom: 15px;
+    z-index: 100;
+    font-size: 18px;
+    opacity: 0;
 }
 
-.formulario-submit {
-    background: rgba(160, 157, 157, 0.7);
-    color: white;
-    padding: 10px 20px;
-    cursor: pointer;
-    border: none;
-
+.formulario__checkbox {
+    margin-right: 10px;
 }
 
-footer{
-    background-color: rgb(230,230,230);
+
+
+.formulario__mensaje {
+    height: 45px;
+    line-height: 45px;
+    background: #F66060;
+    padding: 0 15px;
+    border-radius: 3px;
+    display: none;
 }
 
-footer p{
+.formulario__mensaje-activo {
+    display: block;
+}
+
+.formulario__mensaje p {
     margin: 0;
-    padding: 12px;
-    color: rgb(100,100,100);
 }
 
-footer .container{
-    height: 150px;
+.formulario__grupo-btn-enviar {
     display: flex;
-    justify-content: center;
-    align-items: flex-end;
+    flex-direction: column;
+    align-items: center;
 }
 
-@media (min-width: 850px){
-    header{
-        position: fixed;
-        width: 100%;
-    }
+.formulario__btn {
+    height: 35px;
+    line-height: 35px;
+    width: 20%;
+    background: #000;
+    color: #fff;
+    font-weight: bold;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: .1s ease all;
+}
 
-    header .container{
-        flex-direction: row;
-        justify-content: space-between;
-    }
+.formulario__btn:hover {
+    box-shadow: 3px 0px 30px rgba(163, 163, 163, 1);
+}
 
-    header nav{
-        flex-direction: row;
-        padding-bottom: 0;
-        padding-right: 20px;
-    }
+.formulario__mensaje-exito {
+    font-size: 14px;
+    color: #119200;
+    display: none;
+}
 
-    #hero h1{
-        font-size: 3em;
-    }
+.formulario__mensaje-exito-activo {
+    display: block;
+}
 
-    #hestia-store .container{
-        display: flex;
-        justify-content: space-evenly;
-    }
+/* ----- -----  Estilos para Validacion ----- ----- */
+.formulario__grupo-correcto .formulario__validacion-estado {
+    color: #1ed12d;
+    opacity: 1;
+}
 
-    #hestia-store .texto{
+.formulario__grupo-incorrecto .formulario__label {
+    color: #bb2929;
+}
+
+.formulario__grupo-incorrecto .formulario__validacion-estado {
+    color: #bb2929;
+    opacity: 1;
+}
+
+.formulario__grupo-incorrecto .formulario__input {
+    border: 3px solid #bb2929;
+}
+
+
+/* ----- -----  Mediaqueries ----- ----- */
+@media screen and (max-width: 800px) {
+
+
+
+
+    .formulario__btn {
         width: 50%;
-        max-width: 600px;
-        text-align: initial;
-        padding-left: 30px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-
-    #hestia-store h2{
-        margin-top: 0px;
-    }
-
-    #hestia-store .img-container{
-        background-image: url("images/ropa.jpg");
-        background-size: cover;
-        background-position: center center;
-        height: 400px;
-        width: 300px; 
-    }
-
-    #nuestros-productos .productos{
-        display: flex;
-        justify-content: center;
-    }
-
-    #nuestros-productos p{
-        display: block;
-        margin-bottom: 30px;
-    }
-
-    #nuestros-productos h2{
-        font-size: 3em;
-    }
-
-    #nuestros-productos h3{
-        margin-top: 0;
-    }
-
-    #nuestros-productos .carta{
-        padding: 50px;
-        background-size: 100% 170px;
-        background-repeat: no-repeat;
-        background-position-y: 0;
-        background-color: rgba(50, 50, 50, 1);
-        box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
-    }
-
-    .carta:first-child{
-        background-image: linear-gradient(
-            0deg,
-            rgba(0,0,0,0.5),
-            rgba(0,0,0,0.5)
-        )
-        ,url("images/ropa-1ninos.jpg");
-
-    }
-
-    .carta:nth-child(2){
-        background-image: linear-gradient(
-            0deg,
-            rgba(0,0,0,0.5),
-            rgba(0,0,0,0.5)
-        )
-        ,url("images/mujer.jpg");
-    }
-
-    .carta:nth-child(3){
-        background-image: linear-gradient(
-            0deg,
-            rgba(0,0,0,0.5),
-            rgba(0,0,0,0.5)
-        )
-        ,url("images/accesorios-hombre.jpg");
-
-    }
-
-    .carta:nth-child(4){
-        background-image: linear-gradient(
-            0deg,
-            rgba(0,0,0,0.5),
-            rgba(0,0,0,0.5)
-        )
-        ,url("images/accesrios-varios.jpg");
-    
-    }
-
-   
-
-    #final h2{
-        font-size: 2.8em;
-    }
-
-    
-
-    footer .container{
-        justify-content: flex-end;
     }
 }
 
+
+
+.footer-row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.copy {
+    text-align: center;
+}
+
+.footer-links {
+    width: 25%;
+    padding: 0 15px;
+    list-style: none;
+}
+
+.footer-links ul li a {
+    font-size: 15px;
+    text-decoration: none;
+    color: #221d1d;
+    display: block;
+    margin-bottom: 15px;
+
+}
+
+.social-links a {
+    display: contents;
+    min-height: 40px;
+    width: 40px;
+    background-color: rgba(251, 240, 240, 0.994);
+    margin: 0 10px 10px 0;
+    text-align: center;
+    line-height: 50px;
+
+    color: #171515;
+
+}
+
+@media (min-width:300px) {
+    .footer {
+        display: inline;
+
+    }
+
+
+    @media (min-width: 850px) {
+        header {
+            position: fixed;
+            width: 100%;
+        }
+
+        header .container {
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+        header nav {
+            flex-direction: row;
+            padding-bottom: 0;
+            padding-right: 20px;
+        }
+
+        #hero {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            flex-direction: column;
+            height: 80vh;
+            background-image: linear-gradient(0deg,
+                    rgba(0, 0, 0, 0.5),
+                    rgba(0, 0, 0, 0.5)), url("images/ropa-principal.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center center;
+        }
+
+        #hero h1 {
+            color: whitesmoke;
+
+
+        }
+
+        #hestia-store .container {
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        #hestia-store .texto {
+            width: 50%;
+            max-width: 600px;
+            text-align: initial;
+            padding-left: 30px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        #hestia-store h2 {
+            margin-top: 0px;
+        }
+
+        #hestia-store .img-container {
+            background-image: url("images/ropa.jpg");
+            background-size: cover;
+            background-position: center center;
+            height: 400px;
+            width: 300px;
+        }
+
+        #nuestros-productos .productos {
+            display: flex;
+            justify-content: center;
+        }
+
+        #nuestros-productos p {
+            display: block;
+            margin-bottom: 30px;
+        }
+
+        #nuestros-productos h2 {
+            font-size: 3em;
+        }
+
+        #nuestros-productos h3 {
+            margin-top: 0;
+        }
+
+        #nuestros-productos .carta {
+            padding: 50px;
+            background-size: 100% 170px;
+            background-repeat: no-repeat;
+            background-position-y: 0;
+            background-color: rgba(50, 50, 50, 1);
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+            transition: 300ms;
+        }
+
+        .carta:hover {
+            transform: scale(1.1);
+        }
+
+        .carta:first-child {
+            background-image: linear-gradient(0deg,
+                    rgba(0, 0, 0, 0.5),
+                    rgba(0, 0, 0, 0.5)), url("images/ropa-1ninos.jpg");
+
+        }
+
+        .carta:nth-child(2) {
+            background-image: linear-gradient(0deg,
+                    rgba(0, 0, 0, 0.5),
+                    rgba(0, 0, 0, 0.5)), url("images/mujer.jpg");
+        }
+
+        .carta:nth-child(3) {
+            background-image: linear-gradient(0deg,
+                    rgba(0, 0, 0, 0.5),
+                    rgba(0, 0, 0, 0.5)), url("images/accesorios-hombre.jpg");
+
+        }
+
+        .carta:nth-child(4) {
+            background-image: linear-gradient(0deg,
+                    rgba(0, 0, 0, 0.5),
+                    rgba(0, 0, 0, 0.5)), url("images/accesrios-varios.jpg");
+
+        }
+
+
+
+        #final h2 {
+            font-size: 2.8em;
+        }
+
+
+
+        footer .container {
+            justify-content: space-around;
+        }
